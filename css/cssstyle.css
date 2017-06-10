@@ -1,0 +1,42 @@
+.panel-nob {
+    margin-bottom: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
+}
+.panel-nob-default {
+    border-color: #ddd
+}
+.thumbnail-nob {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 0;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out
+}
+.thumbnail-nob>a>img{
+    height: 150px;
+    width: 150px;
+}
+
+.scrollspy-example {
+    height: 200px;
+    overflow: auto;
+    position: relative;
+}
+
+ .carousel-inner > .item >img{
+    height: 410px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}

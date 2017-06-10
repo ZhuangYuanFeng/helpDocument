@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/cssstyle.css">
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">帮助文档</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bootstrap <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="boot_js.html">JavaScript 组件</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container theme-showcase" role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" >
+        <h1>内容概述</h1>
+        <p>这一块主要是介绍一些常用的Bootstrap的案例</p>
+        <p><a href="http://www.bootcss.com/" target="_blank">点击进入中文官网</a></p>
+        <p><a href="https://github.com/twbs/bootstrap" target="_blank">点击进入github</a></p>
+    </div>
+
+
+
+    <div class="page-header">
+        <h1>导航</h1>
+    </div>
+    <label>样式1</label>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+    &lt;ul class="nav nav-pills">
+        &lt;li role="presentation" class="active">&lt;a href="#">Home&lt;/a>&lt;/li>
+        &lt;li role="presentation">&lt;a href="#">Profile&lt;/a>&lt;/li>
+        &lt;li role="presentation">&lt;a href="#">Messages&lt;/a>&lt;/li>
+    &lt;/ul>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <label>样式2</label>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;ul class="nav nav-tabs">
+  &lt;li role="presentation" class="active">&lt;a href="#">Home&lt;/a>&lt;/li>
+  &lt;li role="presentation">&lt;a href="#">Profile&lt;/a>&lt;/li>
+  &lt;li role="presentation">&lt;a href="#">Messages&lt;/a>&lt;/li>
+&lt;/ul>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <label>样式3</label>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Dropdown <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">menu1</a></li>
+                        <li><a href="#">menu2</a></li>
+                        <li><a href="#">menu3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;ul class="nav nav-pills">
+     &lt;li role="presentation" class="active">&lt;a href="#">Home&lt;/a>&lt;/li>
+     &lt;li role="presentation">&lt;a href="#">Profile&lt;/a>&lt;/li>
+     &lt;li role="presentation">&lt;a href="#">Messages&lt;/a>&lt;/li>
+     &lt;li role="presentation" class="dropdown">
+         &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+             Dropdown &lt;span class="caret">&lt;/span>
+         &lt;/a>
+         &lt;ul class="dropdown-menu">
+             &lt;li>&lt;a href="#">menu1&lt;/a>&lt;/li>
+             &lt;li>&lt;a href="#">menu2&lt;/a>&lt;/li>
+             &lt;li>&lt;a href="#">menu3&lt;/a>&lt;/li>
+         &lt;/ul>
+     &lt;/li>
+&lt;/ul>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <label>样式4</label>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;nav class="navbar navbar-default">
+  &lt;div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    &lt;div class="navbar-header">
+      &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        &lt;span class="sr-only">Toggle navigation&lt;/span>
+        &lt;span class="icon-bar">&lt;/span>
+        &lt;span class="icon-bar">&lt;/span>
+        &lt;span class="icon-bar">&lt;/span>
+      &lt;/button>
+      &lt;a class="navbar-brand" href="#">Brand&lt;/a>
+    &lt;/div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+    &lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      &lt;ul class="nav navbar-nav">
+        &lt;li class="active">&lt;a href="#">Link &lt;span class="sr-only">(current)&lt;/span>&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Link&lt;/a>&lt;/li>
+        &lt;li class="dropdown">
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown &lt;span class="caret">&lt;/span>&lt;/a>
+          &lt;ul class="dropdown-menu">
+            &lt;li>&lt;a href="#">Action&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Another action&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Something else here&lt;/a>&lt;/li>
+            &lt;li role="separator" class="divider">&lt;/li>
+            &lt;li>&lt;a href="#">Separated link&lt;/a>&lt;/li>
+            &lt;li role="separator" class="divider">&lt;/li>
+            &lt;li>&lt;a href="#">One more separated link&lt;/a>&lt;/li>
+          &lt;/ul>
+        &lt;/li>
+      &lt;/ul>
+      &lt;form class="navbar-form navbar-left">
+        &lt;div class="form-group">
+          &lt;input type="text" class="form-control" placeholder="Search">
+        &lt;/div>
+        &lt;button type="submit" class="btn btn-default">Submit&lt;/button>
+      &lt;/form>
+      &lt;ul class="nav navbar-nav navbar-right">
+        &lt;li>&lt;a href="#">Link&lt;/a>&lt;/li>
+        &lt;li class="dropdown">
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown &lt;span class="caret">&lt;/span>&lt;/a>
+          &lt;ul class="dropdown-menu">
+            &lt;li>&lt;a href="#">Action&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Another action&lt;/a>&lt;/li>
+            &lt;li>&lt;a href="#">Something else here&lt;/a>&lt;/li>
+            &lt;li role="separator" class="divider">&lt;/li>
+            &lt;li>&lt;a href="#">Separated link&lt;/a>&lt;/li>
+          &lt;/ul>
+        &lt;/li>
+      &lt;/ul>
+    &lt;/div><!-- /.navbar-collapse -->
+  &lt;/div><!-- /.container-fluid -->
+&lt;/nav>
+                </code>
+            </pre>
+        </div>
+        </div>
+
+    <label>导航顶置</label>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;nav class="navbar navbar-default navbar-fixed-top">
+  &lt;div class="container">
+    ...//导航放这顶置
+  &lt;/div>
+</nav>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <label>导航固定底部</label>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;nav class="navbar navbar-default navbar-fixed-bottom">
+  &lt;div class="container">
+    ...//导航放这顶置
+  &lt;/div>
+                    </nav>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <label>导航静止顶部</label>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;nav class="navbar navbar-default navbar-static-top">
+  &lt;div class="container">
+    ...//导航放这顶置
+  &lt;/div>
+                    </nav>
+                </code>
+            </pre>
+        </div>
+    </div>
+    <div class="page-header">
+        <h1>分页</h1>
+    </div>
+
+    <label>样式1</label>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;nav aria-label="Page navigation">
+  &lt;ul class="pagination">
+    &lt;li>
+      &lt;a href="#" aria-label="Previous">
+        &lt;span aria-hidden="true">&laquo;&lt;/span>
+      &lt;/a>
+    &lt;/li>
+    &lt;li>&lt;a href="#">1&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">2&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">3&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">4&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">5&lt;/a>&lt;/li>
+    &lt;li>
+      &lt;a href="#" aria-label="Next">
+        &lt;span aria-hidden="true">&raquo;&lt;/span>
+      &lt;/a>
+    &lt;/li>
+  &lt;/ul>
+&lt;/nav>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+    <label>样式2</label>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <nav aria-label="...">
+                <ul class="pager">
+                    <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                    <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;nav aria-label="...">
+  &lt;ul class="pager">
+    &lt;li class="previous">&lt;a href="#">&lt;span aria-hidden="true">&larr;&lt;/span> Older&lt;/a>&lt;/li>
+    &lt;li class="next">&lt;a href="#">Newer &lt;span aria-hidden="true">&rarr;&lt;/span>&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/nav>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <label>样式3</label>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <nav aria-label="...">
+                <ul class="pager">
+                    <li><a href="#">Previous</a></li>
+                    <li><a href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;nav aria-label="...">
+  &lt;ul class="pager">
+    &lt;li>&lt;a href="#">Previous&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#">Next&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/nav>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>标签</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Example heading <span class="label label-default">New</span></h3>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;h3>Example heading &lt;span class="label label-default">New&lt;/span>&lt;/h3>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>可用的变体</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;span class="label label-default">Default&lt;/span>
+&lt;span class="label label-primary">Primary&lt;/span>
+&lt;span class="label label-success">Success&lt;/span>
+&lt;span class="label label-info">Info&lt;/span>
+&lt;span class="label label-warning">Warning&lt;/span>
+&lt;span class="label label-danger">Danger&lt;/span>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>徽章</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <a href="#">Inbox <span class="badge">42</span></a>
+
+        <button class="btn btn-primary" type="button">
+            Messages <span class="badge">4</span>
+        </button>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;a href="#">Inbox &lt;span class="badge">42&lt;/span>&lt;/a>
+
+&lt;button class="btn btn-primary" type="button">
+  Messages &lt;span class="badge">4&lt;/span>
+&lt;/button>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>巨幕</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="jumbotron">
+            <h1>Hello, world!</h1>
+            <p>...</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;div class="jumbotron">
+  &lt;h1>Hello, world!&lt;/h1>
+  &lt;p>...&lt;/p>
+  &lt;p>&lt;a class="btn btn-primary btn-lg" href="#" role="button">Learn more&lt;/a>&lt;/p>
+
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>略缩图</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="imgs/tiantiansifangmao-02.png" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="imgs/tiantiansifangmao-02.png" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="imgs/tiantiansifangmao-02.png" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail">
+                    <img src="imgs/tiantiansifangmao-02.png" alt="...">
+                </a>
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;div class="row">
+  &lt;div class="col-xs-6 col-md-3">
+    &lt;a href="#" class="thumbnail">
+      &lt;img src="..." alt="...">
+    &lt;/a>
+  &lt;/div>
+  ...
+&lt;/div>
+
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="imgs/tiantiansifangmao-04.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="imgs/tiantiansifangmao-04.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="imgs/tiantiansifangmao-04.png" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;div class="row">
+  &lt;div class="col-sm-6 col-md-4">
+    &lt;div class="thumbnail">
+      &lt;img src="..." alt="...">
+      &lt;div class="caption">
+        &lt;h3>Thumbnail label&lt;/h3>
+        &lt;p>...&lt;/p>
+        &lt;p>&lt;a href="#" class="btn btn-primary" role="button">Button&lt;/a> &lt;a href="#" class="btn btn-default" role="button">Button&lt;/a>&lt;/p>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>徽章</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <a href="#">Inbox <span class="badge">42</span></a>
+
+        <button class="btn btn-primary" type="button">
+            Messages <span class="badge">4</span>
+        </button>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;a href="#">Inbox &lt;span class="badge">42&lt;/span>&lt;/a>
+
+&lt;button class="btn btn-primary" type="button">
+  Messages &lt;span class="badge">4&lt;/span>
+&lt;/button>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>页头</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="page-header">
+            <h1>Example page header <small>Subtext for header</small></h1>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;div class="page-header">
+  &lt;h1>Example page header &lt;small>Subtext for header&lt;/small>&lt;/h1>
+&lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>警告窗</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </div>
+        <div class="alert alert-success" role="alert">
+            <a href="#" class="alert-link">This is a link...</a>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;div class="alert alert-warning alert-dismissible" role="alert">
+  &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close">&lt;span aria-hidden="true">&times;&lt;/span>&lt;/button>
+  &lt;strong>Warning!&lt;/strong> Better check yourself, you're not looking too good.
+&lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>进度条 </h1>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                <span class="sr-only">60% Complete</span>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                60%
+            </div>
+        </div>
+        <label>进度条较短显示提示</label>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
+                0%
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 2%;">
+                2%
+            </div>
+        </div>
+        <label>带颜色的进度条</label>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                <span class="sr-only">40% Complete (success)</span>
+            </div>
+        </div>
+        <label>带条纹的进度条</label>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                <span class="sr-only">40% Complete (success)</span>
+            </div>
+        </div>
+        <label>带动画的进度条</label>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                <span class="sr-only">45% Complete</span>
+            </div>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;div class="progress">
+     &lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+         &lt;span class="sr-only">60% Complete&lt;/span>
+     &lt;/div>
+&lt;/div>
+
+&lt;!--带提示的进度条-->
+
+&lt;div class="progress">
+     &lt;div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          &lt;span class="sr-only">40% Complete (success)&lt;/span>
+     &lt;/div>
+&lt;/div>
+
+&lt;!--带颜色的进度条-->
+
+&lt;div class="progress">
+     &lt;div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          &lt;span class="sr-only">40% Complete (success)&lt;/span>
+     &lt;/div>
+&lt;/div>
+
+&lt;!--带条纹的进度条-->
+
+&lt;div class="progress">
+      &lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+           60%
+      &lt;/div>
+&lt;/div>
+
+&lt;!--带动画的进度条-->
+
+&lt;div class="progress">
+     &lt;div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+          &lt;span class="sr-only">45% Complete&lt;/span>
+     &lt;/div>
+&lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>评论框</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="imgs/tiantiansifangmao-02.png" alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+            </div>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;div class="media">
+  &lt;div class="media-left">
+    &lt;a href="#">
+      &lt;img class="media-object" src="..." alt="...">
+    &lt;/a>
+  &lt;/div>
+  &lt;div class="media-body">
+    &lt;h4 class="media-heading">Media heading</h4>
+    ...
+  &lt;/div>
+&lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>面板</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel panel-default">
+            <div class="panel-heading">Panel heading without title</div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;div class="panel panel-default">
+  &lt;div class="panel-heading">Panel heading without title&lt;/div>
+  &lt;div class="panel-body">
+    Panel content
+  &lt;/div>
+&lt;/div>
+
+&lt;div class="panel panel-default">
+  &lt;div class="panel-heading">
+    &lt;h3 class="panel-title">Panel title&lt;/h3>
+  &lt;/div>
+  &lt;div class="panel-body">
+    Panel content
+  &lt;/div>
+&lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>表格面板</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Panel heading</div>
+            <div class="panel-body">
+                <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            </div>
+
+            <!-- Table -->
+            <table class="table">
+                <tr>
+                    <td>title1</td>
+                    <td>title2</td>
+                    <td>title3</td>
+                </tr>
+                <tr>
+                    <td>table1</td>
+                    <td>table2</td>
+                    <td>table3</td>
+                </tr>
+                <tr>
+                    <td>table1</td>
+                    <td>table2</td>
+                    <td>table3</td>
+                </tr>
+            </table>
+        </div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;div class="panel panel-default">
+  <!-- Default panel contents -->
+  &lt;div class="panel-heading">Panel heading&lt;/div>
+  &lt;div class="panel-body">
+    &lt;p>...&lt;/p>
+  &lt;/div>
+
+    <!-- Table -->
+  &lt;table class="table">
+    ...
+  &lt;/table>
+&lt;/div>
+
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <h1>well</h1>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="well well-lg">large well</div>
+        <div class="well well-sm">small well</div>
+        <div class="panel-body">
+            <pre>
+                <code>
+&lt;div class="well well-lg">...&lt;/div>
+&lt;div class="well well-sm">...&lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+</div> <!-- /container -->
+<script src="lib/jQuery/jquery-3.1.1.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
